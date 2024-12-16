@@ -577,3 +577,25 @@ a {
 .button-icon-footer {
   fill: #ffffff;
 }
+
+.cont-modal-close .button-modal-close {
+  border-radius: 100%;
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+}
+
+.cont-modal-close .button-icon-close {
+  fill: #2e2f42;
+}
+
+.container-modal .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
