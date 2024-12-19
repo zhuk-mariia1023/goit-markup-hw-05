@@ -509,7 +509,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="text">Leave your contacts and we will call you back</p>
+        <p class="text-modal">Leave your contacts and we will call you back</p>
         <form name="form-modal-window" class="modal-form">
           <div class="cont-modal-form">
             <label for="user-name" class="label-modal">Name</label>
@@ -518,9 +518,10 @@
                 type="text"
                 id="user-name"
                 name="user-name"
-                class="input"
+                class="form-user-input"
+                required
               />
-              <svg class="icon" width="12" height="12">
+              <svg class="form-user-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -532,9 +533,10 @@
                 type="tel"
                 id="user-phone"
                 name="user-phone"
-                class="input"
+                class="form-user-input"
+                required
               />
-              <svg class="icon" width="13" height="13">
+              <svg class="form-user-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -546,9 +548,10 @@
                 type="email"
                 id="user-email"
                 name="user-email"
-                class="input"
+                class="form-user-input"
+                required
               />
-              <svg class="icon" width="16" height="12">
+              <svg class="form-user-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -556,9 +559,9 @@
           <div class="cont-modal-form">
             <label for="user-comment" class="label-modal">Comment</label>
             <textarea
+              class="textarea"
               name="comment"
               id="user-comment"
-              rows="8"
               placeholder="Text input"
             ></textarea>
           </div>
