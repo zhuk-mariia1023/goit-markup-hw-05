@@ -479,30 +479,28 @@
           </ul>
         </div>
         <div class="cont-form-footer">
-          <div class="cont-form">
-            <p class="text">Subscribe</p>
-            <form class="form-footer">
-              <label class="label-footer">
-                <input
-                  class="input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button type="submit" class="button">
-                Subscribe
-                <svg class="button-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-frame"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+          <p class="text">Subscribe</p>
+          <form class="form-footer">
+            <label class="label-footer">
+              <input
+                class="input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="button">
+              Subscribe
+              <svg class="button-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <!-- =========== Modal window ========== -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="button-close">
           <svg class="icon-close" width="8" height="8">
@@ -521,7 +519,7 @@
                 class="form-user-input"
                 required
               />
-              <svg class="form-user-icon" width="12" height="12">
+              <svg class="form-user-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -536,7 +534,7 @@
                 class="form-user-input"
                 required
               />
-              <svg class="form-user-icon" width="13" height="13">
+              <svg class="form-user-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -551,7 +549,7 @@
                 class="form-user-input"
                 required
               />
-              <svg class="form-user-icon" width="16" height="12">
+              <svg class="form-user-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -560,7 +558,7 @@
             <label for="user-comment" class="label-modal">Comment</label>
             <textarea
               class="form-user-comment"
-              name="comment"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
@@ -571,6 +569,7 @@
               class="input-checkbox visually-hidden"
               name="user-privacy"
               id="user-privacy"
+              value="true"
               required
             />
             <label for="user-privacy" class="label-modal-checkbox">
